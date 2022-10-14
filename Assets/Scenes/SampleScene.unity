@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 1260556334}
   - component: {fileID: 1260556335}
   - component: {fileID: 1260556336}
+  - component: {fileID: 1260556337}
   m_Layer: 0
   m_Name: BluePlayer
   m_TagString: Untagged
@@ -512,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260556328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.65, y: 0.002, z: 0}
+  m_LocalPosition: {x: -6.55, y: -1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,7 +551,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -596,7 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f92f127b1c41440bc8531d71ce6178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsGrounded: 0
 --- !u!114 &1260556336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,3 +609,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6263877a9add82d4bba3d4cc8b4e7535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1260556337
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260556328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0fbd83cca50fa30469fd60e601d7863e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
