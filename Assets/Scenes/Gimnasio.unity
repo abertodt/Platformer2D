@@ -2164,6 +2164,7 @@ GameObject:
   - component: {fileID: 388397955789442036}
   - component: {fileID: 388397955789442039}
   - component: {fileID: 785675511241596245}
+  - component: {fileID: 785675511241596246}
   m_Layer: 3
   m_Name: BluePlayer
   m_TagString: Player
@@ -2278,3 +2279,80 @@ CapsuleCollider2D:
   m_Offset: {x: -0.020157099, y: -0.011518449}
   m_Size: {x: 0.34920835, y: 0.6083732}
   m_Direction: 0
+--- !u!114 &785675511241596246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388397955789442029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eceb298b5f1190a4280b30235b8e6503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 388397955789442025}
+  _knockback: {x: 200, y: 500}
+  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  _transparentColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0.12156863}
+--- !u!1001 &7970394233055587055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6194195
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.2644768
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518115, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970394232726518119, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}
+      propertyPath: m_Name
+      value: Border
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35b7f7e430ed48240b67eee6b0aeda3f, type: 3}

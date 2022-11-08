@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8268301384026820937}
   - component: {fileID: 2798705244024796726}
   - component: {fileID: 3148743947304263987}
-  - component: {fileID: 8778177890259165009}
-  - component: {fileID: 1699470377936012490}
+  - component: {fileID: 170905138539148678}
+  - component: {fileID: -7540215083926638236}
   m_Layer: 0
   m_Name: GroundSpike
   m_TagString: Untagged
@@ -113,7 +113,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3852005, y: 0.5152538}
   m_EdgeRadius: 0
---- !u!114 &8778177890259165009
+--- !u!114 &170905138539148678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979213914962065158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea7780f29ea33844b7acd14551dae63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-7540215083926638236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,9 +141,9 @@ MonoBehaviour:
   onEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1699470377936012490}
+      - m_Target: {fileID: 170905138539148678}
         m_TargetAssemblyTypeName: Spike, Assembly-CSharp
-        m_MethodName: KillPlayer
+        m_MethodName: DamagePlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -140,15 +153,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1699470377936012490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979213914962065158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bb0c6134af94c44eb4c7604b8663750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 8268301384026820937}
   - component: {fileID: 2798705244024796726}
   - component: {fileID: 6809477178021398128}
-  - component: {fileID: 2294344831542323433}
   m_Layer: 0
   m_Name: FallingSpike
   m_TagString: Untagged
@@ -195,18 +194,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2294344831542323433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979213914962065158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bb0c6134af94c44eb4c7604b8663750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8407741335789450349
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +205,7 @@ GameObject:
   - component: {fileID: 8617728511546264002}
   - component: {fileID: 7347505252345798127}
   - component: {fileID: 2553005439441800073}
+  - component: {fileID: 6890721529428802238}
   m_Layer: 0
   m_Name: KillCollider
   m_TagString: Untagged
@@ -281,9 +269,9 @@ MonoBehaviour:
   onEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2294344831542323433}
+      - m_Target: {fileID: 6890721529428802238}
         m_TargetAssemblyTypeName: Spike, Assembly-CSharp
-        m_MethodName: KillPlayer
+        m_MethodName: DamagePlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -293,3 +281,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6890721529428802238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407741335789450349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea7780f29ea33844b7acd14551dae63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
